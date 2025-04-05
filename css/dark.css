@@ -50,8 +50,8 @@ body.dark-layout a:hover {
 body.dark-layout input,
 body.dark-layout textarea,
 body.dark-layout .container-btn-main,
-.category-label,
-.sub-label {
+body.dark-layout .category-label,
+body.dark-layout .sub-label {
     background-color: var(--dark-ligth2) !important;
     color: #fff !important;
     border: 1px solid var(--dark-ligth2);
