@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- fav icon -->
+  <link rel="icon" type="image/png" href="imgs/mainlogo.png" />
+
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark.css" />
+
+  <title>Soaq Website</title>
+</head>
+
+<body>
+  <div class="nav-layer"></div>
+
+  <!-- ************** start page  loader ************** -->
+  <div class="loader-container">
+    <span class="loader"></span>
+  </div>
+  <!-- ************** end loader ************** -->
+  <!--start header-->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="imgs/mainlogo.png" alt="img" /></a>
+      <ul class="links">
+        <div class="flex-group-me mid-screen">
+          <img src="imgs/mainlogo.png" class="logo mid-screen" alt="" />
+        </div>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#categories">الاقسام</a></li>
+        <li><a href="faqs.html">الاسئلة الشائعة</a></li>
+        <li><a href="contact-us.html">تواصل معنا</a></li>
+      </ul>
+
+      <div class="flex-sm-gap">
+        <!-- messages shown if user is logged -->
+        <!-- <a href="notifications.html" class="container-btn-main">
+          <div class="text">الرسائل</div>
+          <div class="icon-cont">
+            <span>5</span>
+            <i class="fa-regular fa-message"></i>
+          </div>
+        </a> -->
+        <!-- notification shown if user is logged -->
+        <!-- <a href="notifications.html" class="container-btn-main">
+          <div class="text">الاشعارات</div>
+          <div class="icon-cont">
+            <span>5</span>
+            <i class="fa-regular fa-bell"></i>
+          </div>
+        </a> -->
+        <!-- coins count shown if user is logged -->
+        <!-- <a href="notifications.html" class="container-btn-main">
+          <div class="text">عدد الكوينز</div>
+          <div class="icon-cont-coins color-main font-bold">
+            3242
+          </div>
+        </a> -->
+
+        <!-- lang shown if user is Not logged -->
+
+        <div class="header-mode pointer-click">
+          <i class="fa-regular fa-moon"></i>
+        </div>
+
+        <!-- lang shown if user is Not logged -->
+
+        <a href="#">English</a>
+
+        <!-- login button shown if user is Not logged -->
+
+        <a href="#" data-bs-toggle="modal" data-bs-target="#login-modal" class="main-btn light up btn-login"><span
+            class="text">دخول</span> <img class="img-log" src="imgs/2 User.png" alt="img"></a>
+
+
+        <!-- profile dropdown shown if user is logged  -->
+        <!-- <div class="profile-btn">
+          <img src="imgs/Vector (15).png" alt="img">
+
+          <div class="flex-dbl-sm ltr">
+            <img src="imgs/user.jpg" class="profile-img-head" alt="img">
+            <div class="big-screen">
+              <div class="name-of-profile">عبدالرحمن</div>
+            </div>
+          </div>
+          <ul class="dropProfile p-2">
+            <div class="flex-group-me mb-2 mt-2">
+              <img src="imgs/user.jpg" class="profile-img-head" alt="img">
+            </div>
+            <div class="flex-group-me font14 mb-3">
+              <div>24242</div>
+              <img style="max-width: 22px;" src="imgs/twemoji_coin.png" alt="img">
+            </div>
+
+            <div class="all-lis mt-4 mb-3">
+              <div class="flex-dbl-sm mb-2">
+                <i class="fa-regular fa-user"></i>
+                <div class="gray-col">الملف الشخصي</div>
+              </div>
+              <div class="flex-dbl-sm mb-2">
+                <i class="fa-solid fa-bookmark"></i>
+                <div class="gray-col">المحفوظات</div>
+              </div>
+              <div class="flex-dbl-sm mb-2">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="gray-col">المحفظة</div>
+              </div>
+              <div class="flex-dbl-sm">
+                <img src="imgs/Icons.png" alt="img">
+                <div class="gray-col">English</div>
+              </div>
+            </div>
+
+            <div class="flex-group-me">
+              <div class="all-nights">
+                <label for="light" class="mode-label">
+                  <input type="radio" checked hidden name="mode" id="light">
+                  <div class="text">الوضع الفاتح</div>
+                  <i class="fa-solid fa-sun"></i>
+                </label>
+                <label for="dark" class="mode-label">
+                  <input type="radio" hidden name="mode" id="dark">
+                  <div class="text">الوضع الليلي</div>
+                  <i class="fa-solid fa-moon"></i>
+                </label>
+              </div>
+            </div>
+            <div class="px-1 mt-3 mb-3">
+
+              <a href="" class="main-btn  w-100 red-bg">تسجيل الخروج</a>
+            </div>
+
+          </ul>
+
+        </div> -->
+        <!-- shown every time -->
+        <span class="coll-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+    </div>
+  </header>
+  <!--end header-->
+
+  <!--start Home-->
+  <div class="home-section">
+    <div class="container">
+      <!-- home filter -->
+      <form class="mt-4 mb-4">
+        <div class="flex-sm-gap filter-home">
+          <a href="add-ads.html" class="container-btn-main">
+            <div class="text">نشر اعلان</div>
+            <img src="imgs/basil_add-outline.png" alt="img">
+          </a>
+          <a href="products.html" class="container-btn-main">
+            <div class="text">المتجر</div>
+            <img src="imgs/Group (1).png" alt="img">
+          </a>
+
+          <a href="search.html" class="w-100 d-block">
+            <div class="main-input-cont search-main-cont">
+              <i class="fa-solid fa-magnifying-glass abs-search"></i>
+              <img src="imgs/Vessctor (15).png" class="abs-search-left" alt="img">
+              <input type="text" placeholder="ابحث عن منتجات" class="main-input" />
+            </div>
+
+          </a>
+        </div>
+      </form>
+
+      <!-- home first slider -->
+      <!--start first slider-->
+      <div class="first-slider slider relative-parent">
+        <div class="owl-carousel owl-main owl-theme">
+          <div class="item">
+            <img src="imgs/Rectangle 5719.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="imgs/Rectangle 5719.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <!--end first slider-->
+
+      <!--start categories slider-->
+      <div class="categories-section mt-4" id="categories">
+        <h6 class="mb-4">الاقسام</h6>
+        <!-- categories slider -->
+        <div class="categories style-navs def def-2">
+          <div class="categories-carousel owl-carousel">
+
+
+            <!-- loop here -->
+            <label class="category-label" for="item-1">
+              <input type="radio" hidden name="categories" id="item-1">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-2">
+              <input type="radio" hidden name="categories" id="item-2">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-3">
+              <input type="radio" hidden name="categories" id="item-3">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+            <label class="category-label" for="item-4">
+              <input type="radio" hidden name="categories" id="item-4">
+              <div class="category-circle">
+                <img src="imgs/hugeicons_menu-square.svg" alt="img" />
+              </div>
+              <div class="category-name">الكل</div>
+            </label>
+
+          </div>
+        </div>
+        <!--end categories slider-->
+      </div>
+
+      <div class="all-subcategories mb-4 mt-4">
+        <label for="sub-1" class="sub-label">
+          <input type="radio" name="sub" id="sub-1" hidden>
+          <div class="sub-text">مصانع</div>
+        </label>
+        <label for="sub-2" class="sub-label">
+          <input type="radio" name="sub" id="sub-2" hidden>
+          <div class="sub-text">مصانع</div>
+        </label>
+        <label for="sub-3" class="sub-label">
+          <input type="radio" name="sub" id="sub-3" hidden>
+          <div class="sub-text">مصانع</div>
+        </label>
+
+      </div>
+
+
+      <div class="flex-center mb-4">
+        <button type="button" class="main-btn up w-100">تطبيق الفلتر</button>
+      </div>
+
+
+      <!-- start products section-->
+      <div class="products-section">
+        <h6 class="mb-4">مصانع</h6>
+
+        <div class="style-navs def">
+          <div class="owl-carousel owl-best owl-theme">
+            <!--loop here-->
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <a href="product-details.html">
+
+                  <img class="product-img" src="imgs/Rectangle 5658.png" alt="img" />
+                </a>
+
+
+                <a href="product-details.html" class="mb-1 mt-2 clamp-1">مصانع العودة</a>
+                <p class="mb-3 valid-p gray-col clamp-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+                </p>
+
+                <div class="flex-sm-gap mb-3">
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-location-dot gray-col"></i>
+                    <div class="text clamp-1">الرياض </div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-clock gray-col"></i>
+                    <div class="text">الان</div>
+                  </div>
+                  <div class="flex-dbl-sm">
+                    <i class="fa-solid fa-dollar-sign gray-col"></i>
+                    <div class="text">20</div>
+                  </div>
+                </div>
+
+                <a href="profile.html" class="footer-card">
+                  <img src="imgs/user.jpg" class="person-img-spe" alt="img">
+                  <div>
+                    <div class="text clamp-1 mb-2">عبدالرحمن سليمان</div>
+                    <div class="rateYo" data-rateyo-rating="3"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- end products section-->
+      <!-- start offers section-->
+      <div class="offers-section">
+        <h6 class="mb-4">عروض وخصومات</h6>
+
+        <div class="style-navs def">
+          <div class="owl-carousel owl-offers owl-theme">
+            <!--loop here-->
+            <div class="item">
+              <a href="product2-details.html" class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </a>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-box">
+
+                <img class="product-img" src="imgs/offer.png" alt="img" />
+
+                <div class="mb-2 mt-2 clamp-1">شدات ببجي UC</div>
+
+                <div class="flex-sm-gap mb-1">
+                  <div class="flex-dbl-sm">
+                    <img src="imgs/twemoji_coin.png" alt="img">
+                    <div class="text gray-col decore-line">250</div>
+                  </div>
+
+                  <div>200</div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- end offers section-->
+
+    </div>
+  </div>
+  <!--end Home-->
+
+
+  <!--start footer-->
+  <div class="footer">
+    <div class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-colomn-me">
+              <div class="foot-lo d-flex align-items-center justify-content-center mb-4">
+                <img src="imgs/footerlogo.png" alt="img" />
+              </div>
+
+              <ul>
+
+                <a href="#" class="flex-dbl-sm mb-4">
+                  <i class="fa-solid fa-phone color-white"></i>
+                  <div class="d-text-footer">010029787</div>
+                </a>
+                <a href="#" class="flex-dbl-sm mb-4">
+                  <i class="fa-solid fa-envelope color-white"></i>
+
+                  <div class="d-text-footer">solia@yahoo.com</div>
+                </a>
+
+              </ul>
+
+
+              <div class="flex-group-me gap-m">
+                <a href="#">
+                  <img src="imgs/foot.png" class="social-img" alt="img">
+                </a>
+                <a href="#">
+                  <img src="imgs/foot.png" class="social-img" alt="img">
+                </a>
+                <a href="#">
+                  <img src="imgs/foot.png" class="social-img" alt="img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-colomn-me">
+              <h6 class="mb-5">حول الموقع</h6>
+              <ul>
+                <li>
+                  <a href="who-us.html">
+                    <div class="my-l">من نحن</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact-us.html">
+                    <div class="my-l">اتصل بنا</div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-colomn-me">
+              <h6 class="mb-5">الخدمات</h6>
+              <ul>
+                <li>
+                  <a href="explore-jobs.html">
+                    <div class="my-l">الية العمل</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="explore-jobs.html">
+                    <div class="my-l">الاسئلة الشائعة</div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-colomn-me">
+              <h6 class="mb-5">دعم ومساعدة</h6>
+              <ul>
+
+                <a href="#" class="flex-dbl-sm mb-4">
+                  <div class="d-text-footer">سياسة الاستخدام</div>
+                </a>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="down-footer dark">
+      <div class="container">
+        <div class="down-footer-r font14">© جميع الحقوق محفوظة © سوق </div>
+        <div class="flex-footer-links">
+          <a href="#">اتصل بنا</a>
+          <a href="#">سياسة الخصوصية</a>
+          <a href="#">الشروط والاحكام</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end footer-->
+
+
+  <!-- Modal login -->
+  <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad">
+          <div class="abs-remove" data-bs-target="#login-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="shared-box login">
+
+
+            <form>
+              <div class="flex-header-col">
+                <h6 class="shared-h wid-def color-main text-center mb-4"><span class="px-2 font-bold">تسجيل
+                    الدخول</span> <span class="font-bold color-sec">/</span> <span class="px-2  pointer-click"
+                    onclick="openModal('register-modal' , 'login-modal')">تسجيل جديد</span></h6>
+                <h6 class="shared-h wid-def color-main text-center mb-4"><span class="px-2 font-bold">تسجيل
+                    الدخول</span> <img src="imgs/twemoji_coin.png" alt="img"></h6>
+                <div class="main-input-cont">
+                  <h6 class="mb-2 font14 requiredInputLabel">البريد الالكتروني/ رقم الموبايل</h6>
+                  <input type="text" placeholder="الرجاء ادخال البريد الالكتروني/ رقم الموبايل" class="main-input" />
+                </div>
+                <div class="main-input-cont mb-2 mt-3">
+                  <h6 class="mb-2 font14">كلمة المرور</h6>
+                  <input type="password" class="main-input inputPassSet" placeholder="الرجاء ادخال كلمة المرور" />
+                  <div class="main-float gray-col pointer-click check-setting-ic">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+                <div class="link font14 mb-3 gray-col d-flex align-items-center justify-content-end mt-3">
+                  <button class="trans-button color-main" type="button"
+                    onclick="openModal('restore-modal' , 'login-modal')">
+                    نسيت كلمة المرور؟
+                  </button>
+                </div>
+              </div>
+              <div class="flex-group-me">
+                <button type="button" class="main-btn w-100 up">
+                  <div class="follow-text">تسجيل الدخول</div>
+                </button>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal register -->
+  <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad">
+          <div class="abs-remove" data-bs-target="#login-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="shared-box login">
+
+
+            <form>
+              <div class="flex-header-col">
+                <h6 class="shared-h wid-def color-main text-center mb-4"><span class="px-2 pointer-click"
+                    onclick="openModal('login-modal' , 'register-modal')">تسجيل
+                    الدخول</span> <span class="font-bold color-sec">/</span> <span class="px-2 font-bold">تسجيل
+                    جديد</span></h6>
+                <h6 class="shared-h wid-def color-main text-center mb-4"><span class="px-2 font-bold">حساب جديد</span>
+                  <img src="imgs/twemoji_coin.png" alt="img">
+                </h6>
+
+                <div class="img-regester-cont mb-3 mt-3">
+                  <label for="img-up" class="img-edit">
+                    <input onchange="loadFiles(event)" type="file" id="img-up" hidden accept="image/*" />
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  </label>
+                  <img id="change-profile" src="imgs/solia.jpg" alt="img" />
+                </div>
+                <div class="main-input-cont mb-3">
+                  <h6 class="mb-2 font14 requiredInputLabel">الاسم</h6>
+                  <input type="text" placeholder="الرجاء ادخال الاسم" class="main-input" />
+                </div>
+                <div class="main-input-cont mb-3">
+                  <h6 class="mb-2 font14 requiredInputLabel">البريد الالكتروني/ رقم الموبايل</h6>
+                  <input type="text" placeholder="الرجاء ادخال البريد الالكتروني/ رقم الموبايل" class="main-input" />
+                </div>
+                <div class="relative-parent mt-3">
+                  <!-- add current-loc class to any div in dom to get current location without btn click -->
+                  <div class="main-input-cont mb-3 map-inp">
+                    <h6 class="mb-2 font14">الموقع</h6>
+                    <input type="text" class="main-input" name="address" readonly id="address"
+                      placeholder="يرجي تحديد العنوان علي الخريطة" />
+                    <div class="main-float gray-col map-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <input type="hidden" name="lat" id="lat" value="30" />
+                    <input type="hidden" name="lng" id="lng" value="30" />
+                  </div>
+                  <div class="container-map">
+                    <div class="main-input-cont mb-3 sear-in">
+                      <input type="text" class="main-input" name="address2" id="address2" placeholder="ابحث هنا" />
+                    </div>
+                    <div id="map" class="mb-3" style="width: 100%; height: 300px"></div>
+                  </div>
+                </div>
+                <div class="main-input-cont mb-2 mt-3">
+                  <h6 class="mb-2 font14">كلمة المرور</h6>
+                  <input type="password" class="main-input inputPassSet" placeholder="الرجاء ادخال كلمة المرور" />
+                  <div class="main-float gray-col pointer-click check-setting-ic">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+                <div class="main-input-cont mb-2 mt-3">
+                  <h6 class="mb-2 font14">تاكيد كلمة المرور</h6>
+                  <input type="password" class="main-input inputPassSet" placeholder="الرجاء ادخال كلمة المرور" />
+                  <div class="main-float gray-col pointer-click check-setting-ic">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-group-me mt-4">
+                <button type="button" class="main-btn w-100 up" onclick="openModal('otp-modal' , 'register-modal')">
+                  <div class="follow-text">تسجيل جديد</div>
+                </button>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal restore -->
+  <div class="modal fade" id="restore-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad ">
+          <div class="abs-remove" data-bs-target="#login-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="shared-box login">
+
+
+
+            <form>
+              <div class="flex-header-col">
+                <h5 class="shared-h wid-def text-center">استعادة كلمة المرور</h5>
+                <p class="gray-col font-weight text-center font14">
+                  ادخل الرقم او البريد لاستعادة كلمة المرور
+                </p>
+                <div class="main-input-cont mb-4">
+                  <h6 class="mb-2 font14 requiredInputLabel">البريد الالكتروني/ رقم الموبايل</h6>
+                  <input type="text" placeholder="الرجاء ادخال البريد الالكتروني/ رقم الموبايل" class="main-input" />
+                </div>
+              </div>
+
+              <div class="flex-group-me mb-3">
+                <button type="button" class="main-btn up" onclick="openModal('otp-modal' , 'restore-modal')">
+                  <div class="follow-text">تاكيد</div>
+                </button>
+              </div>
+              <div class="flex-group-me">
+                <div class="gray-col font14 back-to pointer-click" onclick="openModal('login-modal' , 'restore-modal')">
+                  تسجيل الدخول
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal otp code -->
+  <div class="modal fade" id="otp-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad">
+          <div class="abs-remove" data-bs-target="#login-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="shared-box login">
+
+
+
+            <form>
+              <div class="flex-header-col">
+                <h5 class="shared-h text-center wid-def">كود التفعيل</h5>
+                <p class="gray-col font-weight text-center font14">
+                  ادخل كود التفعيل المرسل عبر رقم الموبايل او البريد
+                </p>
+                <div class="code-container">
+                  <!--use value of this input-->
+                  <input id="key-code" hidden name="code" type="text" value="" />
+                  <input type="number" class="code" min="0" max="9" required />
+                  <input type="number" class="code" min="0" max="9" required />
+                  <input type="number" class="code" min="0" max="9" required />
+                  <input type="number" class="code" min="0" max="9" required />
+                </div>
+                <div class="flex-group-me mb-3">
+                  <button type="button" onclick="openModal('changePassword-modal' , 'restore-modal' , 'otp-modal')"
+                    class="main-btn up key-ajax">
+                    تفعيل
+                  </button>
+                </div>
+                <div class="flex-bet-main mt-3">
+                  <div class="dont-have font14 gray-col">
+                    <button type="button" id="js-startTimer" data-time="00:30" class="trans-button">
+                      اعادة ارسال
+                    </button>
+                  </div>
+                  <span class="js-timeout green-col">00:30</span>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal changePassword -->
+  <div class="modal fade" id="changePassword-modal" tabindex="-1" aria-labelledby="logout-modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad">
+          <div class="abs-remove" data-bs-target="#login-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="shared-box login">
+
+
+
+            <form>
+              <div class="flex-header-col">
+                <h5 class="shared-h wid-def text-center">استعادة كلمة المرور</h5>
+                <p class="gray-col font-weight text-center font14">
+                  ادخل كلمة المرور
+                </p>
+                <div class="main-input-cont mb-2 mt-3">
+                  <h6 class="mb-2 font14 reqired-label flex-sm-gap g-sm">
+                    <div>كلمة المرور الجديدة</div>
+                  </h6>
+                  <input type="password" class="main-input inputPassSet" placeholder="كلمة المرور الجديدة" />
+                  <div class="main-float gray-col pointer-click check-setting-ic">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+                <div class="main-input-cont mb-2 mt-3">
+                  <h6 class="mb-2 font14 reqired-label flex-sm-gap g-sm">
+                    <div>تاكيد كلمة المرور الجديدة</div>
+                  </h6>
+                  <input type="password" class="main-input inputPassSet" placeholder="كلمة المرور الجديدة" />
+                  <div class="main-float gray-col pointer-click check-setting-ic">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-group-me mt-4">
+                <button type="button" class="main-btn up" onclick="openModal('success-modal' , 'changePassword-modal')">
+                  <div class="follow-text">ارسال</div>
+                </button>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal done   -->
+  <div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="done-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content main-redious">
+        <div class="modal-body maodal-pad text-center">
+          <div class="flex-group-me mb-4 mt-3">
+            <img class="modal-img-m" src="imgs/Successmark.png" alt="" />
+          </div>
+          <div class="mb-4">
+            <h6 class="text-center mb-3 font-bold">
+              تم استعادة كلمة المرور بنجاح
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA&libraries=places&language=ar"></script>
+  <script src="js/main.js"></script>
+
+
+  <!--img profile in register -->
+  <script>
+    var loadFiles = function (event) {
+      var images = document.getElementById("change-profile");
+      images.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+
+
+  <!-- *************** map *************** -->
+  <script>
+    var map, infoWindow;
+    var marker;
+    var lat = document.getElementById("lat");
+    var lng = document.getElementById("lng");
+    var address = document.getElementById("address");
+    var address2 = document.getElementById("address2");
+    var geocoder = new google.maps.Geocoder();
+    var infowindow = new google.maps.InfoWindow();
+
+
+
+
+
+
+
+    setTimeout(function () {
+      if (document.querySelector(".current-loc")) {
+
+        console.log('current location is working')
+
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
+              };
+
+              console.log(pos)
+
+              infoWindow.setPosition(pos);
+              infoWindow.setContent("Location found.");
+              infoWindow.open(map);
+              map.setCenter(pos);
+              lat.value = pos.lat;
+              lng.value = pos.lng;
+              initMap();
+              console.log(marker.position.lat());
+              console.log(marker.position.lng());
+              console.log(pos.lat);
+            },
+            () => {
+              handleLocationError(true, infoWindow, map.getCenter());
+            }
+          );
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+          console.log("sssssssssss")
+        }
+
+      }
+    }, 500)
+
+
+
+
+
+
+
+
+    function initMap() {
+      var myLatlng = new google.maps.LatLng(lat.value, lng.value);
+      var mapOptions = {
+        zoom: 10,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+      };
+
+      map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      marker = new google.maps.Marker({
+        map: map,
+        position: myLatlng,
+        draggable: true,
+      });
+
+      // set current location
+      infoWindow = new google.maps.InfoWindow();
+
+      const locationButton = document.createElement("button");
+      locationButton.setAttribute("type", "button");
+      locationButton.classList.add("up", "default-font");
+
+      locationButton.textContent = "موقعك الحالي";
+      locationButton.classList.add("custom-map-control-button");
+      map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+        locationButton
+      );
+      //test get current location onload
+
+      locationButton.addEventListener("click", () => {
+        // Try HTML5 geolocation.
+
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
+              };
+
+              infoWindow.setPosition(pos);
+              infoWindow.setContent("Location found.");
+              infoWindow.open(map);
+              map.setCenter(pos);
+              lat.value = pos.lat;
+              lng.value = pos.lng;
+              initMap();
+              console.log(marker.position.lat());
+              console.log(marker.position.lng());
+              console.log(pos.lat);
+            },
+            () => {
+              handleLocationError(true, infoWindow, map.getCenter());
+            }
+          );
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      });
+
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(
+          browserHasGeolocation
+            ? "Error: The Geolocation service failed."
+            : "Error: Your browser doesn't support geolocation."
+        );
+        infoWindow.open(map);
+      }
+      // end current location code
+      // if(document.querySelector('.current-loc') && !document.querySelector('.current-loc')){
+      //     locationButton.click()
+      // }
+
+
+      geocoder.geocode({ latLng: myLatlng }, function (results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results[0]) {
+            address.value = results[0].formatted_address;
+            lat.value = marker.getPosition().lat();
+            lng.value = marker.getPosition().lng();
+            infowindow.setContent(results[0].formatted_address);
+            infowindow.open(map, marker);
+
+
+          }
+        }
+      });
+
+      google.maps.event.addListener(marker, "dragend", function () {
+        geocoder.geocode(
+          { latLng: marker.getPosition() },
+          function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+              if (results[0]) {
+                address.value = results[0].formatted_address;
+                lat.value = marker.getPosition().lat();
+                lng.value = marker.getPosition().lng();
+                infowindow.setContent(results[0].formatted_address);
+                infowindow.open(map, marker);
+
+
+              }
+            }
+          }
+        );
+      });
+    }
+
+    function initialize() {
+      var input = document.getElementById("address2");
+      var autocomplete = new google.maps.places.Autocomplete(
+            /** @type {HTMLInputElement} */(input),
+        {
+          types: ["(cities)"],
+        }
+      );
+      google.maps.event.addListener(
+        autocomplete,
+        "place_changed",
+        function () {
+          var place = autocomplete.getPlace();
+          if (!place.geometry) {
+            return;
+          }
+          lat.value = place.geometry.location.lat();
+          lng.value = place.geometry.location.lng();
+          // initMap();
+          var address = "";
+          if (place.address_components) {
+            address = [
+              (place.address_components[0] &&
+                place.address_components[0].short_name) ||
+              "",
+              (place.address_components[1] &&
+                place.address_components[1].short_name) ||
+              "",
+              (place.address_components[2] &&
+                place.address_components[2].short_name) ||
+              "",
+            ].join(" ");
+          }
+          initMap();
+
+        }
+      );
+    }
+
+    google.maps.event.addDomListener(window, "load", initialize);
+
+    google.maps.event.addDomListener(window, "load", initMap);
+
+    // show and hide map
+    let mapbtn = document.querySelector(".map-inp");
+    // $(".container-map").hide();
+    mapbtn.addEventListener("click", function () {
+      $(".container-map").slideToggle();
+    });
+  </script>
+
+
+
+  <!--owl carousel in header-->
+  <script>
+    $(".owl-main").owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: true,
+      dots: false,
+      rtl: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1500,
+      smartSpeed: 1500,
+      lazyLoad: true,
+      autoplayHoverPause: true,
+      // center: true,
+      navText: [
+        "<span class='fa-solid fa-chevron-right'></span>",
+        "<span class='fa-solid fa-chevron-left'></span>",
+      ],
+
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+  </script>
+
+  <!-- categories carousel -->
+  <script>
+    $(document).ready(function () {
+      $(".categories-carousel").owlCarousel({
+        // items: 2,
+        loop: false,
+        rtl: true,
+        margin: 20,
+        dots: false,
+        nav: true,
+        autoplay: false,
+        slideTransition: "linear",
+        autoplayTimeout: 2800,
+        autoplaySpeed: 2800,
+        autoplayHoverPause: true,
+        navText: [
+          "<span class='fa-solid fa-chevron-right'></span>",
+          "<span class='fa-solid fa-chevron-left'></span>",
+        ],
+        responsive: {
+          1000: {
+            items: 8,
+          },
+          800: {
+            items: 4,
+          },
+          500: {
+            items: 3,
+          },
+        },
+      });
+    });
+  </script>
+
+  <!--products carousel -->
+  <script>
+    $(".owl-best").owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: true,
+      dots: false,
+      rtl: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1500,
+      smartSpeed: 1500,
+      lazyLoad: true,
+      navText: [
+        "<span class='fa-solid fa-chevron-right'></span>",
+        "<span class='fa-solid fa-chevron-left'></span>",
+      ],
+
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1100: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+  <!--offers carousel -->
+  <script>
+    $(".owl-offers").owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: true,
+      dots: false,
+      rtl: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1500,
+      smartSpeed: 1500,
+      lazyLoad: true,
+      navText: [
+        "<span class='fa-solid fa-chevron-right'></span>",
+        "<span class='fa-solid fa-chevron-left'></span>",
+      ],
+
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1100: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+
+  <!--important for products cards style-->
+  <script>
+    $(document).ready(function () {
+      var maxHeight = 0;
+      for (i = 0; i < $(".valid-p").length; i++) {
+        if ($(".valid-p").eq(i)) {
+          var currentHeight = $(".valid-p").eq(i).height();
+          if (currentHeight >= maxHeight) {
+            maxHeight = currentHeight;
+          }
+        } else {
+          break;
+        }
+      }
+      $(".valid-p").height(maxHeight);
+    });
+  </script>
+
+  <!--call rateYo for rating-->
+  <script>
+    $(function () {
+      $(".rateYo").rateYo({
+        starWidth: "18px",
+        normalFill: "#A0A0A0",
+        ratedFill: "#F4900C",
+        spacing: "8px",
+        halfStar: true,
+        rtl: true,
+        readOnly: true,
+        starSvg: `<svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 511.999 511.999" xml:space="preserve">
+<g>
+	<g>
+		<path d="M510.141,143.979L424.63,41.365c-1.523-1.828-3.78-2.885-6.159-2.885H93.588c-0.182-0.001-0.363,0.003-0.545,0.015
+			c-0.004,0-0.009,0-0.01,0c-0.229,0.014-0.455,0.039-0.68,0.072c-1.877,0.277-3.664,1.217-4.977,2.787
+			c-0.002,0.003-0.005,0.008-0.009,0.011L1.857,143.978c-0.005,0.005-0.011,0.012-0.016,0.018c-0.001,0.002-0.003,0.004-0.005,0.006
+			c-0.003,0.004-0.006,0.009-0.01,0.013c-0.002,0.002-0.004,0.005-0.006,0.009c-0.002,0.003-0.005,0.006-0.008,0.01
+			c-0.002,0.003-0.005,0.006-0.009,0.011c-0.001,0.002-0.003,0.004-0.005,0.006c-0.003,0.004-0.006,0.009-0.011,0.013
+			c0,0-0.001,0.001-0.001,0.002c-1.203,1.485-1.788,3.273-1.786,5.051c0,0.105,0.002,0.209,0.006,0.314
+			c0.026,0.645,0.129,1.287,0.31,1.912c0.294,1.019,0.792,1.985,1.487,2.836l247.888,316.271c1.519,1.939,3.846,3.071,6.31,3.071
+			c2.464,0,4.79-1.133,6.31-3.071l247.983-316.392C512.623,151.081,512.56,146.882,510.141,143.979z M418.802,59.416l68.064,81.677
+			H357.544L418.802,59.416z M402.437,54.513l-61.258,81.677l-68.064-81.677H402.437z M324.394,141.094H187.604l68.395-82.075
+			L324.394,141.094z M238.883,54.513l-68.064,81.677l-61.258-81.677H238.883z M93.196,59.416l61.258,81.677H25.132L93.196,59.416z
+			 M24.485,157.127H164.35l73.614,272.368L24.485,157.127z M255.999,434.777l-75.041-277.65H331.04L255.999,434.777z
+			 M274.035,429.496l73.613-272.369h139.865L274.035,429.496z"/>
+	</g>
+</g>
+</svg>`,
+      });
+    });
+  </script>
+
+
+  <!-- auto focus in otp input -->
+  <script>
+    //  input focus on modal open
+    $("#otp-modal").on("shown.bs.modal", function () {
+      $(this).find(".code").first().focus();
+    });
+  </script>
+
+  <!-- open modal -->
+  <script>
+    function openModal(modalId, prevModalId, prevModalId2) {
+      $(`#${modalId}`).modal("show");
+      $(`#${prevModalId}`).modal("hide");
+      $(`#${prevModalId2}`).modal("hide");
+      if (modalId == "otp-modal" && $('.js-timeout').html() == '00:30') {
+        var interval;
+
+        function countdown() {
+          $("#js-startTimer").attr("disabled", true);
+          clearInterval(interval);
+          interval = setInterval(function () {
+            var timer = $(".js-timeout").html();
+            timer = timer.split(":");
+            var minutes = timer[0];
+            var seconds = timer[1];
+            seconds -= 1;
+            if (minutes < 0) return;
+            else if (seconds < 0 && minutes != 0) {
+              minutes -= 1;
+              seconds = 59;
+            } else if (seconds < 10 && length.seconds != 2)
+              seconds = "0" + seconds;
+
+            $(".js-timeout").html(minutes + ":" + seconds);
+
+            if (minutes == 0 && seconds == 0) {
+              clearInterval(interval);
+              $("#js-startTimer").attr("disabled", false);
+              $(".js-timeout").hide();
+            }
+          }, 1000);
+        }
+
+        $("#js-startTimer").click(function () {
+          $(".js-timeout").show();
+          $(".js-timeout").text($(this).data("time"));
+          $("#js-startTimer").attr("disabled", true);
+          countdown();
+        });
+        countdown();
+      }
+    }
+  </script>
+
+
+  <!-- PassWord Show and hide -->
+  <script>
+    const iconsPassSet = document.querySelectorAll(".check-setting-ic");
+
+    if (iconsPassSet) {
+      iconsPassSet.forEach((ic) => {
+        ic.addEventListener("click", function () {
+          let input = ic.parentElement.querySelector(".inputPassSet");
+          showPassword(input, ic);
+        });
+      });
+    }
+
+    // Function To Show And Hide Password
+    function showPassword(input, icon) {
+      if (input.type == "password") {
+        input.setAttribute("type", "text");
+        icon.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
+      } else {
+        input.setAttribute("type", "password");
+        icon.innerHTML = `<i class="fa-regular fa-eye"></i>`;
+      }
+
+      // input.focus();
+    }
+  </script>
+
+  <!--get key code-->
+  <script>
+    $(document).ready(function () {
+      let codes = document.querySelectorAll(".code");
+
+      $(".code-container .code").first().focus();
+
+      codes.forEach((code, idx) => {
+        code.addEventListener("keydown", (e) => {
+          if (e.key >= 0 && e.key <= 9) {
+            codes[idx].value = "";
+            if ([idx + 1] < codes.length) {
+              setTimeout(() => codes[idx + 1].focus(), 10);
+            }
+          } else if (e.key === "Backspace") {
+            setTimeout(() => codes[idx - 1].focus(), 10);
+          }
+        });
+      });
+      // add key code value to  hidden input
+      let HiddenInp = document.querySelector("#key-code");
+      let AjaxBtn = document.querySelector(".key-ajax");
+      let inpArray = [];
+      AjaxBtn.addEventListener("click", function () {
+        for (let i = 0; i < codes.length; i++) {
+          inpArray.push(codes[i].value);
+        }
+        let inpValReal = inpArray.join("");
+        HiddenInp.value = inpValReal;
+        inpArray = [];
+      });
+    });
+  </script>
+</body>
+
+</html>
