@@ -1932,6 +1932,7 @@ a.anchor-pro i,
 }
 .anchor-first {
   border-radius: 6px;
+  position: relative;
   width: 100%;
   justify-content: center;
   gap: 20px;
@@ -3450,9 +3451,9 @@ textarea.reply-me:focus {
   font-size: 13px;
 }
 .form-stiky {
-  position: sticky;
+  /* position: sticky;
   bottom: 0;
-  right: 0;
+  right: 0; */
   width: 100%;
   background-color: var(--color-white);
 }
@@ -3516,4 +3517,24 @@ textarea.reply-me:focus {
 }
 .header-mode{
   font-size: 18px;
+}
+.abs-fav{
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  color: #181717;
+}
+.product-box{
+  position: relative;
+}
+.fa-bookmark.fa-solid{
+  color: var(--main) !important;
 }

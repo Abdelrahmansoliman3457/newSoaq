@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/select2.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/dark.css" />
     <!-- <link rel="stylesheet" href="css/ltr-style.css" /> -->
@@ -171,15 +172,18 @@
                                 </a>
                             </div>
                             <div class="text-center gray-col mb-2">#45</div>
-                            <div class="flex-group-me">
+                            <a href="rates.html" class="flex-group-me pointer-click">
                                 <div class="rateYo" data-rateyo-rating="4"></div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-9">
                         <div class="left-c">
                             <div class="flex-bet mb-4">
                                 <div class="profile-name">ذراع بلايستيشن</div>
+                                <div class="pointer-click gray-col" data-bs-toggle="modal" data-bs-target="#complain-modal">
+                                    <i class="fa-solid fa-flag"></i>
+                                </div>
                             </div>
                             <p class="main-p gray-col col-md-8 col-12 mb-5">
                                 مستعمل
@@ -260,11 +264,11 @@
                         <div class="pointer-click" data-bs-toggle="modal" data-bs-target="#complain-modal">
                             <i class="fa-solid fa-flag"></i>
                         </div>
-                        <div class="pointer-click" onclick="toggleHeart()">
+                        <div class="pointer-click" onclick="toggleHeart(this)">
                             <i class="fa-regular fa-heart"></i>
                         </div>
-                        <div class="pointer-click">
-                            <i class="fa-solid fa-bookmark"></i>
+                        <div class="pointer-click" onclick="toggleHeart(this)">
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                         <div class="pointer-click" data-bs-target="#share-modal" data-bs-toggle="modal">
                             <i class="fa-solid fa-share-nodes"></i>
@@ -283,7 +287,7 @@
                     <div class="text">5 تعليقات</div>
                 </div>
 
-                <div class="c-red pointer-click" data-bs-toggle="modal" data-bs-target="#comment-modal">عرض</div>
+                <a href="comments.html" class="c-red pointer-click" >عرض</a>
             </div>
         </div>
 
@@ -412,86 +416,86 @@
 
                             <div class="tan-sh">
                                 <div class="mt-4">
-                                    
-                                        <div class="main-card-b">
-                                            
-                                                <div class="comment-box-flex">
-                                                    <div class="comment-box">
-                                                        <div class="spe-flex-comm mb-2">
-                                                            <img class="user-comm-i"
-                                                                src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
-                                                                alt="" />
-                                                            <div class="comm-info">
-                                                                <div class="comm-name">عبدالرحمن سليمان</div>
-                                                                <div class="gray-col font14">
-                                                                    <i class="fa-regular fa-clock"></i>
-                                                                    منذ 17 يوم و22 ساعة
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="spe-flex-comm">
-                                                            <div class="comm-real">
-                                                                متعاون جدا وعمل مميز وباحترافية
-                                                            </div>
-                                                            <button class="report-btn add-reply">
-                                                                اضافة رد
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment-box-flex">
-                                                    <div class="comment-box">
-                                                        <div class="spe-flex-comm mb-2">
-                                                            <img class="user-comm-i"
-                                                                src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
-                                                                alt="" />
-                                                            <div class="comm-info">
-                                                                <div class="comm-name">عبدالله ذكريا</div>
-                                                                <div class="gray-col font14">
-                                                                    <i class="fa-regular fa-clock"></i>
-                                                                    منذ 17 يوم و22 ساعة
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="spe-flex-comm">
-                                                            <div class="comm-real">
-                                                                متعاون جدا وعمل مميز وباحترافية
-                                                            </div>
-                                                            <button class="report-btn add-reply">
-                                                                اضافة رد
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment-box-flex">
-                                                    <div class="comment-box">
-                                      
-                                                        <div class="spe-flex-comm mb-2">
-                                                            <img class="user-comm-i"
-                                                                src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
-                                                                alt="" />
-                                                            <div class="comm-info">
-                                                                <div class="comm-name">محمد رمضان</div>
-                                                                <div class="gray-col font14">
-                                                                    <i class="fa-regular fa-clock"></i>
-                                                                    منذ 17 يوم و22 ساعة
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="spe-flex-comm">
-                                                            <div class="comm-real">
-                                                                متعاون جدا وعمل مميز وباحترافية
-                                                            </div>
-                                                            <button class="report-btn add-reply">
-                                                                اضافة رد
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                         
 
+                                    <div class="main-card-b">
+
+                                        <div class="comment-box-flex">
+                                            <div class="comment-box">
+                                                <div class="spe-flex-comm mb-2">
+                                                    <img class="user-comm-i"
+                                                        src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
+                                                        alt="" />
+                                                    <div class="comm-info">
+                                                        <div class="comm-name">عبدالرحمن سليمان</div>
+                                                        <div class="gray-col font14">
+                                                            <i class="fa-regular fa-clock"></i>
+                                                            منذ 17 يوم و22 ساعة
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="spe-flex-comm">
+                                                    <div class="comm-real">
+                                                        متعاون جدا وعمل مميز وباحترافية
+                                                    </div>
+                                                    <button class="report-btn add-reply">
+                                                        اضافة رد
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    
+                                        <div class="comment-box-flex">
+                                            <div class="comment-box">
+                                                <div class="spe-flex-comm mb-2">
+                                                    <img class="user-comm-i"
+                                                        src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
+                                                        alt="" />
+                                                    <div class="comm-info">
+                                                        <div class="comm-name">عبدالله ذكريا</div>
+                                                        <div class="gray-col font14">
+                                                            <i class="fa-regular fa-clock"></i>
+                                                            منذ 17 يوم و22 ساعة
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="spe-flex-comm">
+                                                    <div class="comm-real">
+                                                        متعاون جدا وعمل مميز وباحترافية
+                                                    </div>
+                                                    <button class="report-btn add-reply">
+                                                        اضافة رد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-box-flex">
+                                            <div class="comment-box">
+
+                                                <div class="spe-flex-comm mb-2">
+                                                    <img class="user-comm-i"
+                                                        src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
+                                                        alt="" />
+                                                    <div class="comm-info">
+                                                        <div class="comm-name">محمد رمضان</div>
+                                                        <div class="gray-col font14">
+                                                            <i class="fa-regular fa-clock"></i>
+                                                            منذ 17 يوم و22 ساعة
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="spe-flex-comm">
+                                                    <div class="comm-real">
+                                                        متعاون جدا وعمل مميز وباحترافية
+                                                    </div>
+                                                    <button class="report-btn add-reply">
+                                                        اضافة رد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -555,21 +559,35 @@
                     </div>
                     <div class="shared-box login">
 
+                        <h6 class="text-center mb-4">ابلاغ</h6>
+
 
 
                         <form>
-                            <div class="flex-header-col">
-                                <h5 class="shared-h wid-def text-center mb-4">ارسال شكوى</h5>
-
-                                <div class="main-input-cont mb-4">
-                                    <h6 class="mb-2 font14 requiredInputLabel">سبب الشكوى</h6>
-                                    <input type="text" placeholder="الرجاء ادخال سبب الشكوى" class="main-input" />
+                            <div class="main-input-cont main-select-main mb-4">
+                                <h6 class="mb-2 font14 requiredInputLabel">اختر القسم</h6>
+                                <select class="main-select" data-minimum-results-for-search="Infinity">
+                                    <option value="">وظائف</option>
+                                    <option value="">مجال 2</option>
+                                    <option value="">مجال 3</option>
+                                </select>
+                                <div class="abs-select label-ex">
+                                    <i class="fa-solid fa-chevron-down"></i>
                                 </div>
+                            </div>
+                            <div class="main-input-cont mb-2">
+                                <h6 class="mb-2 font14 requiredInputLabel">الوصف</h6>
+                                <textarea rows="5" class="main-textarea"></textarea>
+                            </div>
+                            <div class="flex-sm-gap">
+                                <input type="checkbox" id="block" class="main-check">
+                                <label for="block">حظر الاعلان</label>
                             </div>
 
 
-                            <div class="flex-group-me">
-                                <button class="main-btn up" type="submit">ارسال</button>
+
+                            <div class="flex-group-me mt-4">
+                                <button class="main-btn up" type="button" data-bs-target="#success-modal" data-bs-toggle="modal" data-bs-dismiss="modal">ارسال</button>
                             </div>
                         </form>
 
@@ -580,13 +598,40 @@
         </div>
     </div>
 
+     <!-- Modal done   -->
+  <div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="done-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content main-redious">
+        <div class="modal-body modal-pad text-center">
+          <div class="abs-remove" data-bs-target="#done-modal" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="flex-group-me mb-4 mt-3">
+            <img class="modal-img-m" src="imgs/Successmark.png" alt="img" />
+          </div>
+          <div class="mb-4">
+            <h6 class="text-center mb-3 font-bold">تم ارسال الابلاغ بنجاح سيتم الرد عليك خلال ساعة</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.js"></script>
     <script src="js/jquery.c-share.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!--call select2 single-->
+    <script>
+        $(document).ready(function () {
+            $(".main-select").select2();
+        });
+    </script>
 
 
 
@@ -654,19 +699,22 @@
 
     <!--toggle heart using jquery-->
     <script>
-        function toggleHeart() {
-
-            if ($('.fa-heart').hasClass('fa-solid')) {
-                $('.fa-heart').addClass('fa-regular');
-                $('.fa-heart').removeClass('fa-solid');
-            } else {
-                $('.fa-heart').removeClass('fa-regular');
-                $('.fa-heart').addClass('fa-solid');
-            }
-        }
+      function toggleHeart(ele) {
+      
+            
+          if ($(ele).find('i').hasClass('fa-solid')) {
+            $(ele).find('i').addClass('fa-regular');
+            $(ele).find('i').removeClass('fa-solid');
+          } else {
+            $(ele).find('i').removeClass('fa-regular');
+            $(ele).find('i').addClass('fa-solid');
+          }
+      }
 
     </script>
 
+
+    <!-- share -->
     <script>
         $('#shareBlock').cShare({
             data: {
@@ -731,7 +779,7 @@
         });
     </script>
 
-
+    <!-- copy link -->
     <script>
         function copyLink(link) {
             navigator.clipboard.writeText(link);
@@ -768,7 +816,7 @@
             e.preventDefault();
 
             if (
-                speTextArea.value.trim().length > 0 
+                speTextArea.value.trim().length > 0
             ) {
                 let userInput = speTextArea.value;
                 console.log(userInput);
@@ -816,14 +864,14 @@
                                                         </div>
                                                     </div>
                                                 </div>`;
-                if(document.querySelector(".activate-apend")){
-                    
+                if (document.querySelector(".activate-apend")) {
+
                     document
                         .querySelector(".activate-apend")
                         .insertAdjacentHTML("beforeend", temp);
-                }  else {
+                } else {
                     mainCard.insertAdjacentHTML("beforeend", temp2);
-                }          
+                }
                 speTextArea.value = "";
                 mainCard.scrollBy(0, 1000);
                 speTextArea.focus();

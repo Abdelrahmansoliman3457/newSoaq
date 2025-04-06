@@ -802,6 +802,11 @@
                     <div class="my-l">اتصل بنا</div>
                   </a>
                 </li>
+                <li>
+                  <a href="#" data-bs-target="#share-modal" data-bs-toggle="modal">
+                    <div class="my-l">مشاركة الموقع</div>
+                  </a>
+                </li>
 
               </ul>
             </div>
@@ -1149,13 +1154,116 @@
     </div>
   </div>
 
+
+      <!-- Modal share -->
+      <div class="modal fade" id="share-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content main-redious">
+                <div class="modal-body modal-pad ">
+                    <div class="abs-remove" data-bs-target="#share-modal" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="shared-box login">
+
+                        <h6 class="text-center font18 mb-4">مشاركة</h6>
+
+
+                        <div class="flex-group-me">
+                            <div class="copy-link pointer-click" onclick="copyLink('facebook.com')">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div id="shareBlock"></div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.c-share.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
   <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA&libraries=places&language=ar"></script>
   <script src="js/main.js"></script>
+
+
+      <!-- share -->
+      <script>
+        $('#shareBlock').cShare({
+            data: {
+                fb: {
+                    fa: 'fab fa-facebook-f',
+                    name: 'Fb',
+                    href: (url) => {
+                        return `https://www.facebook.com/sharer.php?u=${url}`
+                    },
+                    show: true
+                },
+                line: {
+                    fa: 'fab fa-line fa-2x',
+                    name: 'Line',
+                    href: (url) => {
+                        return `https://social-plugins.line.me/lineit/share?url=${url}`
+                    },
+                    show: true,
+                    hideWrapper: true
+                },
+                plurk: {
+                    fa: 'fa-plurk',
+                    name: 'Plurk',
+                    href: (url, description) => {
+                        return `http://www.plurk.com/?qualifier=shares&status=${description} ${url}`
+                    },
+                    show: false
+                },
+                weibo: {
+                    fa: 'fab fa-weibo',
+                    name: '微博',
+                    href: (url, description) => {
+                        return `http://service.weibo.com/share/share.php?title=${description}&url=${url}`
+                    },
+                    show: false
+                },
+                twitter: {
+                    fa: 'fab fa-twitter',
+                    name: 'Twitter',
+                    href: (url, description) => {
+                        return `https://twitter.com/intent/tweet?original_referer=${url}&url=${url}&text=${description}`
+                    },
+                    show: false
+                },
+                tumblr: {
+                    fa: 'fab fa-tumblr',
+                    name: 'Tumblr',
+                    href: (url, description) => {
+                        return `http://www.tumblr.com/share/link?name=${description} ${url}&url=${url}`
+                    },
+                    show: false
+                },
+                email: {
+                    fa: 'fas fa-envelope',
+                    name: 'E-mail',
+                    href: (url, description) => {
+                        return `mailto:?subject=${description}&body=${description} ${url}`
+                    },
+                    show: false
+                }
+            },
+        });
+    </script>
+
+    <!-- copy link -->
+    <script>
+        function copyLink(link) {
+            navigator.clipboard.writeText(link);
+        }
+    </script>
 
 
   <!--img profile in register -->

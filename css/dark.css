@@ -250,3 +250,7 @@ body.dark-layout .rate-card , body.dark-layout .setting-link{
 body.dark-layout .img-wallet{
     filter: brightness(0) invert(1);
 }
+body.dark-layout .switch .main-div{
+    background-color: var(--dark);
+    border: 1px solid var(--dark-ligth);
+}
