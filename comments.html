@@ -166,16 +166,16 @@
             <div class="col-lg-8 margin-auto mt-4 mb-4">
 
                 <div class="card-border">
-    
+
                     <h6 class="text-center font18 mb-4">التعليقات</h6>
-    
+
                     <div class="shown-scroll">
-    
+
                         <div class="tan-sh">
                             <div class="mt-4">
-    
+
                                 <div class="main-card-b">
-    
+
                                     <div class="comment-box-flex">
                                         <div class="comment-box">
                                             <div class="spe-flex-comm mb-2">
@@ -196,6 +196,10 @@
                                                 </div>
                                                 <button class="report-btn add-reply">
                                                     اضافة رد
+                                                </button>
+                                                <button class="report-btn color-main" data-bs-toggle="modal"
+                                                data-bs-target="#complain-modal" >
+                                                    اضافة ابلاغ
                                                 </button>
                                             </div>
                                         </div>
@@ -218,15 +222,19 @@
                                                 <div class="comm-real">
                                                     متعاون جدا وعمل مميز وباحترافية
                                                 </div>
-                                                <button class="report-btn add-reply">
+                                                <button class="report-btn add-reply" >
                                                     اضافة رد
+                                                </button>
+                                                <button class="report-btn color-main" data-bs-toggle="modal"
+                                                data-bs-target="#complain-modal" >
+                                                    اضافة ابلاغ
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="comment-box-flex">
                                         <div class="comment-box">
-    
+
                                             <div class="spe-flex-comm mb-2">
                                                 <img class="user-comm-i"
                                                     src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
@@ -246,17 +254,21 @@
                                                 <button class="report-btn add-reply">
                                                     اضافة رد
                                                 </button>
+                                                <button class="report-btn color-main" data-bs-toggle="modal"
+                                                data-bs-target="#complain-modal" >
+                                                    اضافة ابلاغ
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-    
-    
+
+
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
-    
+
                     <form action="" id="myform" class="form-stiky">
                         <div class="valid-me mt-4"></div>
                         <div class="text-ar-div mt-1">
@@ -267,16 +279,16 @@
                             </button>
                         </div>
                     </form>
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
                 </div>
             </div>
- 
+
 
 
         </div>
@@ -390,6 +402,76 @@
     <!--end footer-->
 
 
+    <!-- Modal complain -->
+    <div class="modal fade" id="complain-modal" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content main-redious">
+                <div class="modal-body modal-pad ">
+                    <div class="abs-remove" data-bs-target="#complain-modal" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="shared-box login">
+
+                        <h6 class="text-center mb-4">ابلاغ</h6>
+
+
+
+                        <form>
+                            <div class="main-input-cont main-select-main mb-4">
+                                <h6 class="mb-2 font14 requiredInputLabel">اختر القسم</h6>
+                                <select class="main-select" data-minimum-results-for-search="Infinity">
+                                    <option value="">وظائف</option>
+                                    <option value="">مجال 2</option>
+                                    <option value="">مجال 3</option>
+                                </select>
+                                <div class="abs-select label-ex">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="main-input-cont mb-2">
+                                <h6 class="mb-2 font14 requiredInputLabel">الوصف</h6>
+                                <textarea rows="5" class="main-textarea"></textarea>
+                            </div>
+                            <div class="flex-sm-gap">
+                                <input type="checkbox" id="block" class="main-check">
+                                <label for="block">حظر الاعلان</label>
+                            </div>
+
+
+
+                            <div class="flex-group-me mt-4">
+                                <button class="main-btn up" type="button" data-bs-target="#success-modal"
+                                    data-bs-toggle="modal" data-bs-dismiss="modal">ارسال</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal done   -->
+    <div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="done-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content main-redious">
+                <div class="modal-body modal-pad text-center">
+                    <div class="abs-remove" data-bs-target="#done-modal" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="flex-group-me mb-4 mt-3">
+                        <img class="modal-img-m" src="imgs/Successmark.png" alt="img" />
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="text-center mb-3 font-bold">تم ارسال الابلاغ بنجاح سيتم الرد عليك خلال ساعة</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -505,6 +587,15 @@
         //     me.closest(".comment-box-add").remove();
         // }
     </script>
+
+    <!--call select2 single-->
+    <script>
+        $(document).ready(function () {
+            $(".main-select").select2();
+        });
+    </script>
+
+
 
 </body>
 

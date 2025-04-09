@@ -124,13 +124,16 @@ body.dark-layout .icon-cont-coins {
 body.dark-layout .profile-btn>img {
     filter: brightness(0) invert(1);
 }
+
 body.dark-layout .dropProfile {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .all-nights{
+
+body.dark-layout .all-nights {
     background-color: var(--dark-ligth2);
 }
+
 @media (max-width: 1024px) {
     body.dark-layout .links {
         background-color: var(--dark-ligth);
@@ -141,116 +144,159 @@ body.dark-layout .single-task {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout body:not(:has(.profile-card)) .fixed-header-page{
+
+body.dark-layout body:not(:has(.profile-card)) .fixed-header-page {
     background: none;
     height: 90px;
 }
-body.dark-layout .loader-container{
+
+body.dark-layout .loader-container {
     background-color: var(--dark-ligth2);
 }
+
 body.dark-layout .loader-container .loader:after {
     background-color: var(--color-white);
 }
 
-body.dark-layout .top-card-add{
+body.dark-layout .top-card-add {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .select2-container--default .select2-selection--single , body.dark-layout .select2-container--default .select2-results>.select2-results__options{
+
+body.dark-layout .select2-container--default .select2-selection--single,
+body.dark-layout .select2-container--default .select2-results>.select2-results__options {
     background-color: var(--dark-ligth2) !important;
     border: 1px solid var(--dark-ligth2) !important;
     color: #fff !important;
 }
-body.dark-layout .select2-container--default .select2-selection--single .select2-selection__rendered , body.dark-layout .select2-results__option{
+
+body.dark-layout .select2-container--default .select2-selection--single .select2-selection__rendered,
+body.dark-layout .select2-results__option {
     color: #fff !important;
 }
-body.dark-layout .label-mm , body.dark-layout .uploader-main{
+
+body.dark-layout .label-mm,
+body.dark-layout .uploader-main {
     color: #fff !important;
     background-color: var(--dark-ligth2);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .uploader-main img{
+
+body.dark-layout .uploader-main img {
     filter: brightness(0) invert(1);
 }
-body.dark-layout .labels-container{
+
+body.dark-layout .labels-container {
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .iti__country-list{
+
+body.dark-layout .iti__country-list {
     background-color: var(--dark-ligth2);
 }
-body.dark-layout .card-border{
+
+body.dark-layout .card-border {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .nav-tabs .nav-link{
+
+body.dark-layout .nav-tabs .nav-link {
     color: #fff;
 }
 
-body.dark-layout .chat-body{
+body.dark-layout .chat-body {
     background-color: var(--dark-ligth) !important;
 }
-body.dark-layout .chat-senders .input-chat-m{
+
+body.dark-layout .chat-senders .input-chat-m {
     background-color: var(--dark-ligth2);
-    border-color: #212744  !important;
+    border-color: #212744 !important;
 }
-body.dark-layout textarea{
+
+body.dark-layout textarea {
     color: var(--color-white) !important;
 }
-body.dark-layout textarea::placeholder{
+
+body.dark-layout textarea::placeholder {
     color: var(--color-white) !important;
 }
-body.dark-layout .label-chat:has(input){
+
+body.dark-layout .label-chat:has(input) {
     background-color: var(--dark-ligth2) !important;
 }
-body.dark-layout .chat-header{
+
+body.dark-layout .chat-header {
     background-color: var(--dark-ligth2) !important;
     background: var(--dark-ligth2) !important;
-    border-color: #212744  !important;
+    border-color: #212744 !important;
     border-width: 4px;
 }
-body.dark-layout .voice-note-container .gray-col , body.dark-layout .message-contain .color-main{
+
+body.dark-layout .voice-note-container .gray-col,
+body.dark-layout .message-contain .color-main {
     color: #000 !important;
 }
-body.dark-layout .single-room  , body.dark-layout .data-table tbody tr:nth-child(odd){
+
+body.dark-layout .single-room,
+body.dark-layout .data-table tbody tr:nth-child(odd) {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 
 
 }
-body.dark-layout .accordion-button:not(.collapsed) , body.dark-layout .accordion-button, body.dark-layout .accordion-body{
+
+body.dark-layout .accordion-button:not(.collapsed),
+body.dark-layout .accordion-button,
+body.dark-layout .accordion-body {
     background-color: var(--dark-ligth2) !important;
     color: #fff !important;
 }
-body.dark-layout .accordion-item{
+
+body.dark-layout .accordion-item {
     border: 1px solid var(--dark-ligth2) !important;
 
 }
-body.dark-layout .single-noti-anchor , body.dark-layout .card-pro-info{
+
+body.dark-layout .single-noti-anchor,
+body.dark-layout .card-pro-info {
     background-color: var(--dark-ligth) !important;
     border: 1px solid var(--dark-ligth2) !important;
 }
-body.dark-layout .text-info-main{
+
+body.dark-layout .text-info-main {
     background-color: var(--dark-ligth2) !important;
 }
-body.dark-layout .profile-card{
+
+body.dark-layout .profile-card {
     background-color: var(--dark-ligth2);
     border: 1px solid var(--dark-ligth);
 }
-body.dark-layout .form-stiky , body.dark-layout .text-ar-div{
+
+body.dark-layout .form-stiky,
+body.dark-layout .text-ar-div {
     background: transparent;
 }
-body.dark-layout .comment-box-add{
+
+body.dark-layout .comment-box-add {
     background-color: var(--dark-ligth);
     border: 1px solid var(--dark-ligth2);
 }
-body.dark-layout .rate-card , body.dark-layout .setting-link{
+
+body.dark-layout .rate-card,
+body.dark-layout .setting-link {
     background-color: var(--dark-ligth2);
     border: 1px solid var(--dark-ligth);
 }
-body.dark-layout .img-wallet{
+
+body.dark-layout .img-wallet {
     filter: brightness(0) invert(1);
 }
-body.dark-layout .switch .main-div{
+
+body.dark-layout .switch .main-div {
     background-color: var(--dark);
     border: 1px solid var(--dark-ligth);
+}
+
+body.dark-layout .page-item .page-link {
+    background-color: var(--dark-ligth) !important;
+    color: #fff !important;
 }

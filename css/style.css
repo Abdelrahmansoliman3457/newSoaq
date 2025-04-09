@@ -3538,3 +3538,31 @@ textarea.reply-me:focus {
 .fa-bookmark.fa-solid{
   color: var(--main) !important;
 }
+.list-show{
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  color: #181717;
+  cursor: pointer;
+  box-shadow: 0px 1px 4px 1px rgb(0 0 0 / 8%);
+}
+.bg-gray{
+  background-color: gray !important;
+}
+.bg-red{
+  background-color: red !important;
+}
+.bg-green{
+  background-color: green !important;
+}
+.yes-wrap{
+  flex-wrap: wrap !important;
+}

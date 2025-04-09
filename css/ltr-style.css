@@ -313,3 +313,40 @@ img.mid-screen {
   right: 0;
   left: unset;
 }
+.list-show{
+  left: unset;
+  right: 22px;
+}
+
+/* paginatoin */
+.pagination {
+  justify-content: center !important;
+  margin-top: 15px;
+  gap: 8px !important;
+}
+.page-item .page-link {
+  border-radius: 4px !important;
+  padding: 4px;
+  min-width: 42px !important;
+  height: 42px !important;
+  text-align: center;
+  line-height: 30px;
+  background-color: #dedede;
+  color: #3a3939;
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: var(--main);
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  font-size: 24px;
+  background-color: #272525;
+  color: #fff;
+}
+
+.page-item.disabled .page-link {
+  background: none;
+  cursor: not-allowed !important;
+  color: #888ea8;
+}
