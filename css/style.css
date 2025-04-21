@@ -3566,3 +3566,10 @@ textarea.reply-me:focus {
 .yes-wrap{
   flex-wrap: wrap !important;
 }
+
+#share-buttons{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 20px;
+}

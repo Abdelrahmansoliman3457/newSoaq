@@ -162,7 +162,7 @@ window.onload = function(){
       }
     } else{
       document.body.classList.remove('dark-layout')
-      document.querySelector(".header-mode i").classList.replace("fa-sun", "fa-moon");
+      document.querySelector(".header-mode i")?.classList.replace("fa-sun", "fa-moon");
       if(headerModeBtnSwitch){
         document.querySelector('#dark').checked = false
         document.querySelector('#light').checked = true
